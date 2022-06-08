@@ -4,6 +4,7 @@
 *Desc:header file containing functions declaration
 */
 
+void jack_bauer(void);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int print_last_digit(int);
