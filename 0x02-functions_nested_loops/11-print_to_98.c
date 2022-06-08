@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
 * print_to_98 - print numbers from n to 98
 * @n: start number
