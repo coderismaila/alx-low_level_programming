@@ -1,15 +1,16 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
 * print_square - prints a square of dimension size x size
-* @size : number of _ to be printed
+* @size : number of # to be printed
 * Return:void
 */
 
 void print_square(int size)
 {
-	int i = 0, j;
+	int i, j;
 
+	i = 0;
 	while (i < size && size > 0)
 	{
 		j = 0;
