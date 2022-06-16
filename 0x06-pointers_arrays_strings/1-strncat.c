@@ -7,15 +7,15 @@
  * @n: number of byte to apoend from src
  * Return: pointer
  */
-char * _strncat(char *dest, const char *src, size_t n)
+char *_strncat(char *dest, const char *src, int n)
 {
 	int dest_len;
 	int i;
 
-	// find length of dest
+	/*find length of dest*/
 	for (dest_len = 0; dest[dest_len] != '\0'; dest_len++)
 		;
-	// append n bytes from src to dest
+	/*append n bytes from src to dest*/
 	for (i = 0 ; i < n && src[i] != '\0' ; i++)
 		dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
