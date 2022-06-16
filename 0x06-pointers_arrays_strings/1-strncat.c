@@ -7,7 +7,7 @@
  * @n: number of byte to apoend from src
  * Return: pointer
  */
-char *_strncat(char *dest, const char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dest_len;
 	int i;
