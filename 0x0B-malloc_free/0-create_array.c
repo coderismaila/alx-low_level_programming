@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 	if (!ptr)
 		return (NULL);
 	i = 0;
-	while (*ptr)
+	while (i < size)
 	{
 		*(ptr + i) = c;
 		i++;
