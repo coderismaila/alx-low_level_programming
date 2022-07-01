@@ -12,20 +12,14 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
-	unsigned int len = n, index;
+	unsigned int len = n, i;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	/**
-	 * find length of s1
-	 */
-	while (s1)
-	{
+	for (i = 0; s1[i]; i++)
 		len++;
-		s1++;
-	}
 	concat = malloc(sizeof(char) * (len + 1));
 	if (concat == NULL)
 		return (NULL);
